@@ -31,11 +31,9 @@ if py_version == (3, 2):
 else:
     test_requirements.append('jinja2')
 
-setup(name='tgext.crud',
+setup(name='tgext.crud-jmr',
       version=version,
       description="Crud Controller Extension for TG2",
-      long_description=README + "\n" +
-                       CHANGES,
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Programming Language :: Python",
@@ -52,7 +50,7 @@ setup(name='tgext.crud',
       zip_safe=True,
       install_requires=[
           "TurboGears2 >= 2.3.0",
-          'sprox >= 0.11.1',
+          'sprox-jmr >= 0.11.1',
       ],
       test_suite='nose.collector',
       tests_require=test_requirements,
